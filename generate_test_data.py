@@ -11,16 +11,16 @@ parser.add_argument(
     "-n", default=100, type=int, help="Number of lines to generate"
 )
 parser.add_argument(
-    "-t", 
+    "-t",
     default="0.5-5",
-    help="Range for sleep times, formatted as lower-upper"
+    help="Range for sleep times, formatted as lower-upper",
 )
 
 # Initialisieren der Grenzen und Argumente
 args = parser.parse_args()
 
 lower_bound, upper_bound = map(float, args.t.split("-"))
-lines = args.n 
+lines = args.n
 
 # Test erstellen
 for i in range(lines):
