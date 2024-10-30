@@ -8,11 +8,11 @@ parser = argparse.ArgumentParser(
 )
 
 parser.add_argument(
-    "-n", default= 100, type=int, help="Number of lines to generate"
+    "-n", default=100, type=int, help="Number of lines to generate"
 )
 parser.add_argument(
     "-t", 
-    default= "0.5-5",
+    default="0.5-5",
     help="Range for sleep times, formatted as lower-upper"
 )
 
