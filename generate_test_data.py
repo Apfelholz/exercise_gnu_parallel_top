@@ -7,8 +7,8 @@ parser = argparse.ArgumentParser(
     description='Generates a .txt file that contains n lines of sleep() statements within the specified range'
 )
 
-parser.add_argument('-n', type=int, help='Number of lines to generate')
-parser.add_argument('-t', help='Range for sleep times, formatted as lower-upper')
+parser.add_argument('-n', type=int, default=100, help='Number of lines to generate')
+parser.add_argument('-t', default='0.5-5', help='Range for sleep times, formatted as lower-upper')
 
 # Initialisieren der Grenzen und Argumente
 args = parser.parse_args()
